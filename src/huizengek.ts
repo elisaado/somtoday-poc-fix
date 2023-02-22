@@ -116,6 +116,9 @@ export default function huizengek(org: Organization, username: string, password:
                             cookie: cookies.join("; ")
                         }
                     })).data;
+                    
+                    // TODO: TEMPFIX
+                    console.log(json);
 
                     const token = parseToken(json);
                     if (token == null) {
